@@ -12,6 +12,7 @@
 		D7053DB82423E327002807CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7053DB62423E327002807CC /* Main.storyboard */; };
 		D7053DBA2423E328002807CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7053DB92423E328002807CC /* Assets.xcassets */; };
 		D7053DBD2423E328002807CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7053DBB2423E328002807CC /* LaunchScreen.storyboard */; };
+		D748E4772424644100B68598 /* DogNames.txt in Resources */ = {isa = PBXBuildFile; fileRef = D748E4762424644100B68598 /* DogNames.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D7053DB92423E328002807CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7053DBC2423E328002807CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7053DBE2423E328002807CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D748E4762424644100B68598 /* DogNames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DogNames.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				D7053DB92423E328002807CC /* Assets.xcassets */,
 				D7053DBB2423E328002807CC /* LaunchScreen.storyboard */,
 				D7053DBE2423E328002807CC /* Info.plist */,
+				D748E4762424644100B68598 /* DogNames.txt */,
 			);
 			path = "Unit Testing Demo";
 			sourceTree = "<group>";
@@ -122,6 +125,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D748E4772424644100B68598 /* DogNames.txt in Resources */,
 				D7053DBD2423E328002807CC /* LaunchScreen.storyboard in Resources */,
 				D7053DBA2423E328002807CC /* Assets.xcassets in Resources */,
 				D7053DB82423E327002807CC /* Main.storyboard in Resources */,
