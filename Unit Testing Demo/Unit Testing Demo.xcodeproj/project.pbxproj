@@ -15,6 +15,7 @@
 		D748E475242455D300B68598 /* FileListLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D748E474242455D300B68598 /* FileListLoader.swift */; };
 		D748E4772424644100B68598 /* DogNames.txt in Resources */ = {isa = PBXBuildFile; fileRef = D748E4762424644100B68598 /* DogNames.txt */; };
 		D74BC50024314F81007F4880 /* Favoritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74BC4FF24314F81007F4880 /* Favoritable.swift */; };
+		D74BC5022431544A007F4880 /* FavoriteNamesSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74BC5012431544A007F4880 /* FavoriteNamesSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D748E474242455D300B68598 /* FileListLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListLoader.swift; sourceTree = "<group>"; };
 		D748E4762424644100B68598 /* DogNames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DogNames.txt; sourceTree = "<group>"; };
 		D74BC4FF24314F81007F4880 /* Favoritable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favoritable.swift; sourceTree = "<group>"; };
+		D74BC5012431544A007F4880 /* FavoriteNamesSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteNamesSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				D7053DBE2423E328002807CC /* Info.plist */,
 				D748E4762424644100B68598 /* DogNames.txt */,
 				D74BC4FF24314F81007F4880 /* Favoritable.swift */,
+				D74BC5012431544A007F4880 /* FavoriteNamesSource.swift */,
 			);
 			path = "Unit Testing Demo";
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				D7053DB52423E326002807CC /* ListViewController.swift in Sources */,
 				D7053DB12423E326002807CC /* AppDelegate.swift in Sources */,
 				D748E475242455D300B68598 /* FileListLoader.swift in Sources */,
+				D74BC5022431544A007F4880 /* FavoriteNamesSource.swift in Sources */,
 				D74BC50024314F81007F4880 /* Favoritable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
