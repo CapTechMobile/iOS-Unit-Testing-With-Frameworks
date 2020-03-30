@@ -3,7 +3,7 @@
 import UIKit
 
 class ListViewController: UIViewController {
-    var favoritesSource = FavoriteNamesSource()
+    var favoritesSource = FavoriteNamesSource(dataLoader: FileListLoader(fileName: "DogNames", fileType: ".txt"))
     var isFavoritesSelected: Bool {
         return segmentedControl.selectedSegmentIndex == 1
     }
@@ -25,14 +25,14 @@ class ListViewController: UIViewController {
 extension ListViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return favoritesSource.source.count
+        return favoritesSource.currentList.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "cell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) ?? UITableViewCell(style: .default, reuseIdentifier: cellIdentifier)
 
-        let currentElement = favoritesSource.source[indexPath.row]
+        let currentElement = favoritesSource.currentList[indexPath.row]
         cell.accessoryType = currentElement.isFavorite ? .checkmark : .none
         cell.textLabel?.text = currentElement.item
 

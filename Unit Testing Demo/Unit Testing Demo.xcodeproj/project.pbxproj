@@ -17,6 +17,7 @@
 		D74BC50024314F81007F4880 /* Favoritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74BC4FF24314F81007F4880 /* Favoritable.swift */; };
 		D74BC5022431544A007F4880 /* FavoriteNamesSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74BC5012431544A007F4880 /* FavoriteNamesSource.swift */; };
 		D74BC5122432262A007F4880 /* FileListLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74BC5112432262A007F4880 /* FileListLoaderTests.swift */; };
+		D74BC51824322E52007F4880 /* FavoriteNamesSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74BC51724322E52007F4880 /* FavoriteNamesSourceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D74BC50724322566007F4880 /* Unit Testing Demo Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Testing Demo Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74BC50B24322566007F4880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D74BC5112432262A007F4880 /* FileListLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListLoaderTests.swift; sourceTree = "<group>"; };
+		D74BC51724322E52007F4880 /* FavoriteNamesSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteNamesSourceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				D74BC50B24322566007F4880 /* Info.plist */,
 				D74BC5112432262A007F4880 /* FileListLoaderTests.swift */,
+				D74BC51724322E52007F4880 /* FavoriteNamesSourceTests.swift */,
 			);
 			path = "Unit Testing Demo Tests";
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D74BC5122432262A007F4880 /* FileListLoaderTests.swift in Sources */,
+				D74BC51824322E52007F4880 /* FavoriteNamesSourceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
