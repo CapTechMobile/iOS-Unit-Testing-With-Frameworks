@@ -2,7 +2,11 @@
 
 import Foundation
 
-struct Favoritable<T> {
+class Favoritable<T> {
     let item: T
     var isFavorite: Bool = false
+
+    init(item: T) {
+        self.item = item
+    }
 }

@@ -21,21 +21,29 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="xTr-jt-sM0"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9Sh-3I-d4a"/>
                                 </connections>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" id="jcD-Qa-dxc">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="jcD-Qa-dxc">
                                 <rect key="frame" x="0.0" y="140" width="414" height="32"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="All"/>
                                     <segment title="Favorite"/>
                                 </segments>
+                                <connections>
+                                    <action selector="didChangeSegmentedControl" destination="BYZ-38-t0r" eventType="valueChanged" id="3Oz-5a-TMs"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Dog Names" id="v2M-QR-pQM"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="jcD-Qa-dxc" id="TWO-0W-vE6"/>
+                        <outlet property="tableView" destination="2VL-WE-DQW" id="VHq-BC-N5I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
