@@ -16,7 +16,18 @@
 		D748E4772424644100B68598 /* DogNames.txt in Resources */ = {isa = PBXBuildFile; fileRef = D748E4762424644100B68598 /* DogNames.txt */; };
 		D74BC50024314F81007F4880 /* Favoritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74BC4FF24314F81007F4880 /* Favoritable.swift */; };
 		D74BC5022431544A007F4880 /* FavoriteNamesSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74BC5012431544A007F4880 /* FavoriteNamesSource.swift */; };
+		D74BC5122432262A007F4880 /* FileListLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74BC5112432262A007F4880 /* FileListLoaderTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D74BC50C24322566007F4880 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7053DA52423E326002807CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7053DAC2423E326002807CC;
+			remoteInfo = "Unit Testing Demo";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D7053DAD2423E326002807CC /* Unit Testing Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unit Testing Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,10 +41,20 @@
 		D748E4762424644100B68598 /* DogNames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DogNames.txt; sourceTree = "<group>"; };
 		D74BC4FF24314F81007F4880 /* Favoritable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favoritable.swift; sourceTree = "<group>"; };
 		D74BC5012431544A007F4880 /* FavoriteNamesSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteNamesSource.swift; sourceTree = "<group>"; };
+		D74BC50724322566007F4880 /* Unit Testing Demo Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Testing Demo Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D74BC50B24322566007F4880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D74BC5112432262A007F4880 /* FileListLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListLoaderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D7053DAA2423E326002807CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D74BC50424322566007F4880 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				D7053DAF2423E326002807CC /* Unit Testing Demo */,
+				D74BC50824322566007F4880 /* Unit Testing Demo Tests */,
 				D7053DAE2423E326002807CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				D7053DAD2423E326002807CC /* Unit Testing Demo.app */,
+				D74BC50724322566007F4880 /* Unit Testing Demo Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +97,15 @@
 				D74BC5012431544A007F4880 /* FavoriteNamesSource.swift */,
 			);
 			path = "Unit Testing Demo";
+			sourceTree = "<group>";
+		};
+		D74BC50824322566007F4880 /* Unit Testing Demo Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D74BC50B24322566007F4880 /* Info.plist */,
+				D74BC5112432262A007F4880 /* FileListLoaderTests.swift */,
+			);
+			path = "Unit Testing Demo Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +128,24 @@
 			productReference = D7053DAD2423E326002807CC /* Unit Testing Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D74BC50624322566007F4880 /* Unit Testing Demo Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D74BC50E24322566007F4880 /* Build configuration list for PBXNativeTarget "Unit Testing Demo Tests" */;
+			buildPhases = (
+				D74BC50324322566007F4880 /* Sources */,
+				D74BC50424322566007F4880 /* Frameworks */,
+				D74BC50524322566007F4880 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D74BC50D24322566007F4880 /* PBXTargetDependency */,
+			);
+			name = "Unit Testing Demo Tests";
+			productName = "Unit Testing Demo Tests";
+			productReference = D74BC50724322566007F4880 /* Unit Testing Demo Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -108,6 +158,11 @@
 				TargetAttributes = {
 					D7053DAC2423E326002807CC = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					D74BC50624322566007F4880 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+						TestTargetID = D7053DAC2423E326002807CC;
 					};
 				};
 			};
@@ -125,6 +180,7 @@
 			projectRoot = "";
 			targets = (
 				D7053DAC2423E326002807CC /* Unit Testing Demo */,
+				D74BC50624322566007F4880 /* Unit Testing Demo Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +194,13 @@
 				D7053DBD2423E328002807CC /* LaunchScreen.storyboard in Resources */,
 				D7053DBA2423E328002807CC /* Assets.xcassets in Resources */,
 				D7053DB82423E327002807CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D74BC50524322566007F4880 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +219,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D74BC50324322566007F4880 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D74BC5122432262A007F4880 /* FileListLoaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D74BC50D24322566007F4880 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7053DAC2423E326002807CC /* Unit Testing Demo */;
+			targetProxy = D74BC50C24322566007F4880 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D7053DB62423E327002807CC /* Main.storyboard */ = {
@@ -328,6 +407,49 @@
 			};
 			name = Release;
 		};
+		D74BC50F24322566007F4880 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LT584FP9D;
+				INFOPLIST_FILE = "Unit Testing Demo Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.captech.rickymunz.Unit-Testing-Demo-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Unit Testing Demo.app/Unit Testing Demo";
+			};
+			name = Debug;
+		};
+		D74BC51024322566007F4880 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LT584FP9D;
+				INFOPLIST_FILE = "Unit Testing Demo Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.captech.rickymunz.Unit-Testing-Demo-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Unit Testing Demo.app/Unit Testing Demo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -345,6 +467,15 @@
 			buildConfigurations = (
 				D7053DC22423E328002807CC /* Debug */,
 				D7053DC32423E328002807CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D74BC50E24322566007F4880 /* Build configuration list for PBXNativeTarget "Unit Testing Demo Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D74BC50F24322566007F4880 /* Debug */,
+				D74BC51024322566007F4880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
