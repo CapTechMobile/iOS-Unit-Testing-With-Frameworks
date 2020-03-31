@@ -1,6 +1,7 @@
 // Copyright © 2020 CapTech. All rights reserved.
 
 import UIKit
+import Favorites
 
 class ListViewController: UIViewController {
     var favoritesSource = FavoriteNamesSource(dataLoader: FileListLoader(fileName: "DogNames", fileType: ".txt"))

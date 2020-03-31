@@ -1,7 +1,7 @@
 // Copyright © 2020 CapTech. All rights reserved.
 
 import XCTest
-@testable import Unit_Testing_Demo
+@testable import Favorites
 
 class FavoriteNamesSourceTests: XCTestCase {
 

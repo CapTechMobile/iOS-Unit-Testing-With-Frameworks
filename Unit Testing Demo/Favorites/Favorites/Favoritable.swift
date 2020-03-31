@@ -2,9 +2,9 @@
 
 import Foundation
 
-class Favoritable<T> {
-    let item: T
-    var isFavorite: Bool = false
+public class Favoritable<T> {
+    public let item: T
+    public var isFavorite: Bool = false
 
     init(item: T) {
         self.item = item

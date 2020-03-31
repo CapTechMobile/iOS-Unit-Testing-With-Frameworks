@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D7053DAC2423E326002807CC"
-               BuildableName = "Unit Testing Demo.app"
-               BlueprintName = "Unit Testing Demo"
-               ReferencedContainer = "container:Unit Testing Demo.xcodeproj">
+               BlueprintIdentifier = "D7AF81B12432ADAB00332E3F"
+               BuildableName = "Favorites.framework"
+               BlueprintName = "Favorites"
+               ReferencedContainer = "container:Favorites.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -26,19 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D74BC50624322566007F4880"
-               BuildableName = "Unit Testing Demo Tests.xctest"
-               BlueprintName = "Unit Testing Demo Tests"
-               ReferencedContainer = "container:Unit Testing Demo.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
@@ -46,7 +35,7 @@
                BlueprintIdentifier = "D7AF81C02432ADFD00332E3F"
                BuildableName = "FavoritesTests.xctest"
                BlueprintName = "FavoritesTests"
-               ReferencedContainer = "container:Favorites/Favorites.xcodeproj">
+               ReferencedContainer = "container:Favorites.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -61,16 +50,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D7053DAC2423E326002807CC"
-            BuildableName = "Unit Testing Demo.app"
-            BlueprintName = "Unit Testing Demo"
-            ReferencedContainer = "container:Unit Testing Demo.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -78,16 +57,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D7053DAC2423E326002807CC"
-            BuildableName = "Unit Testing Demo.app"
-            BlueprintName = "Unit Testing Demo"
-            ReferencedContainer = "container:Unit Testing Demo.xcodeproj">
+            BlueprintIdentifier = "D7AF81B12432ADAB00332E3F"
+            BuildableName = "Favorites.framework"
+            BlueprintName = "Favorites"
+            ReferencedContainer = "container:Favorites.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

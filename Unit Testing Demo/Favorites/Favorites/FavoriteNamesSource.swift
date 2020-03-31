@@ -2,17 +2,17 @@
 
 import Foundation
 
-class FavoriteNamesSource {
+public class FavoriteNamesSource {
     private var allList: [Favoritable<String>]
     private var favoritesList: [Favoritable<String>] { allList.filter { $0.isFavorite }}
-    var isFavoritesSelected: Bool = false
-    var currentList: [Favoritable<String>] { isFavoritesSelected ? favoritesList : allList }
+    public var isFavoritesSelected: Bool = false
+    public var currentList: [Favoritable<String>] { isFavoritesSelected ? favoritesList : allList }
 
-    init(dataLoader: StringListLoader) {
+    public init(dataLoader: StringListLoader) {
         self.allList = dataLoader.load().map({ Favoritable(item: $0) })
     }
 
-    func toggleFavorite(at index: Int) {
+    public func toggleFavorite(at index: Int) {
         guard currentList.indices.contains(index) else { return }
         currentList[index].isFavorite.toggle()
     }

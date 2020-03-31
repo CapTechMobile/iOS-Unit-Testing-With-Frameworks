@@ -2,18 +2,18 @@
 
 import Foundation
 
-protocol StringListLoader {
+public protocol StringListLoader {
     func load() -> [String]
 }
 
-class FileListLoader: StringListLoader {
+public class FileListLoader: StringListLoader {
     private let fileURL: URL?
 
-    init(fileName: String, fileType: String) {
+    public init(fileName: String, fileType: String) {
         fileURL = Bundle.main.url(forResource: fileName, withExtension: fileType)
     }
 
-    func load() -> [String] {
+    public func load() -> [String] {
         guard let fileURL = fileURL else { return [] }
 
         do {
